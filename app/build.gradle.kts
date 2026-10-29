@@ -5,6 +5,7 @@ plugins {
 android {
     namespace = "com.dgdai113.kangaroo"
     compileSdk = 35
+    ndkVersion = "27.2.12479018"
     defaultConfig {
         applicationId = "com.dgdai113.kangaroo"
         minSdk = 26
