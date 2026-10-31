@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="Kangaroo Cloud — Chromebook-first control center for Pollard kangaroo search jobs.">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Kangaroo Cloud</title>
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <a class="brand" href="#dashboard"><span class="brand-mark">K</span><span>Kangaroo <small>CLOUD WORKSPACE</small></span></a>
+      <nav aria-label="Main navigation">
+        <a class="nav-link active" href="#dashboard" data-page="dashboard">◫ <span>Dashboard</span></a>
+        <a class="nav-link" href="#new-search" data-page="new-search">＋ <span>New search</span></a>
+        <a class="nav-link" href="#jobs" data-page="jobs">▤ <span>Jobs</span></a>
+        <a class="nav-link" href="#history" data-page="history">◷ <span>History</span></a>
+        <a class="nav-link" href="#analytics" data-page="analytics">▥ <span>Analytics</span></a>
+        <a class="nav-link" href="#settings" data-page="settings">⚙ <span>Settings</span></a>
+      </nav>
+      <div class="sidebar-bottom"><span class="status-dot"></span> Cloud connection not configured</div>
+    </aside>
+    <main class="main">
+      <header class="topbar"><button class="mobile-menu" id="menuButton" aria-label="Toggle menu">☰</button><div><div class="eyebrow">KANGAROO CLOUD / WORKSPACE</div><h1 id="pageTitle">Dashboard</h1></div><div class="top-actions"><span class="chip">CHROMEBOOK EDITION</span><span class="avatar">KC</span></div></header>
+      <div class="content" id="app" aria-live="polite"></div>
+      <footer>Cloud control plane preview · No solver is connected · <span id="year"></span></footer>
+    </main>
+  </div>
+  <script src="/app.js" defer></script>
+</body>
+</html>
